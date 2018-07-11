@@ -18,7 +18,7 @@ body {
 	font-family: 'Roboto', sans-serif;
 	line-height: 1.75;
 	box-sizing: border-box;
-	background: linear-gradient(#f9fcfc,rgba(252, 245, 217, 0.6));
+	background: linear-gradient(#FCFEF2, #FAE6DE);
 }
 
 h1 {
@@ -157,7 +157,7 @@ h1{
 	
 	// phrases start
 .phrases{
-	min-height: 150px;
+	min-height: 100px;
 	display: flex;
 	justify-content: center;
 	align-items: center;
