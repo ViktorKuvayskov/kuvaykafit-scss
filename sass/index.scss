@@ -86,7 +86,7 @@ a{
 		display: flex;
 		justify-content: space-between;
 		align-items: flex-end;
-	}
+}
 	.main-menu ul{
 		display: flex;
    		flex-direction: row;
@@ -115,13 +115,12 @@ a{
 
 	.nav-bottom{
 		min-height: 650px;
-		background-image: url(..//img/slider-item1.jpg);
+		background-image: url(..//img/web/nav-bottom-img.jpg);
 		background-position: center;
    		background-size: cover;
    		position: relative;
    		.nav-bottom-text{
    			position: absolute;
-			top: 10%;
 			left: 21%;
 			color: #fff;
 			background: rgba(0, 44, 77, 0.4);
@@ -143,15 +142,14 @@ h1{
 	display: flex;
 	flex-direction: column;
 	margin-bottom: 30px;
-	.aboutme-img img{
-		width: 100%;
-	}
-	.aboutme-text p {
-	width: 100%; 
-	height: 200px;
-	overflow: hidden;  
-	text-overflow: clip; 
-	}
+	.aboutme-item{
+		display: flex;
+		justify-content: space-between;
+		p{
+			padding: 20px;
+			text-align: left;
+		}
+	}	
 }	
 	// about me block end
 	
@@ -274,3 +272,106 @@ h1{
 
 	//footer end
 }
+
+
+// mobile start
+
+@media all and (max-width: 780px){
+  
+// header start
+  .header { 
+		.nav-top{
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			flex-direction: column;
+			.icon-block{
+				width: 100%;
+				display: flex;
+				justify-content: space-between;
+			}
+			ul{
+				display: flex;
+   				justify-content: center;
+    			align-items: center;
+   				flex-direction: column;
+				a{
+					display: inline-block;
+
+				}
+			}
+
+		}
+	}
+	// header end
+	// aboutme-block start
+	.aboutme-block{
+		display: flex;
+		justify-content: center;
+		flex-direction: column;
+		.aboutme-item{
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			flex-direction: column;
+			margin: 30px;
+			.aboutme-img{
+				width: 300px;
+			}
+			p{
+				font-size: 12px;
+				padding: 5px;
+			}
+		}
+		.aboutme-mobile{
+			display: flex;
+			flex-direction: column-reverse;
+		}
+	}	
+	// aboutme-block end
+
+	// phrases start
+	.phrases{
+		p{
+			font-size: 13px;
+			padding: 25px;
+		}
+	}	
+	// phrases end
+
+	// slider-course start
+	.slider1{
+		.slider-courses{
+			display: flex;
+    		justify-content: center;
+    		align-items: center;
+    		flex-direction: column;	
+    		font-size: 12px;
+    		.slider-course-text{
+    			min-height: 700px;
+    		}	
+	    	.slider-courses-img{	
+	    		img{
+	    			width: 200px;
+	    		}
+	    	}	
+		}
+	}
+	// slider-course end
+
+	// gallery start
+	.gallery-slider{
+		.slider3{
+			img{
+				width: 300px;
+			}
+		}
+	}
+	// gallery end
+	
+	// form start
+	
+	// form end
+}
+
+

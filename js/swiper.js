@@ -13,6 +13,12 @@ $(document).ready(function(){
   arrow: true,
     responsive: [
     {
+      breakpoint: 830,
+      settings: {
+        slidesToShow: 3,
+      }
+    },
+    {
       breakpoint: 768,
       settings: {
         slidesToShow: 2,
