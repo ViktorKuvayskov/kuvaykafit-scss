@@ -135,6 +135,19 @@ a{
 			background: rgba(0, 44, 77, 0.4);
 			border-radius: 15px;
 			padding: 5px 20px;
+			.logo{
+				text-align: center;
+				font-size: 2rem;
+				a{
+					color: white;
+					transition: all 1s; 
+					padding: 10px;
+					&:hover{
+						background: #cac6c6;
+						border-radius: 10px;
+					}
+				}
+			}
    		}
 	}
 
@@ -342,8 +355,8 @@ h1{
 			position: relative;
 			.nav-bottom-text{
 			    position: absolute;
-			    left: 12%;
-  				width: 65%;
+			    left: 0%;
+    			width: 89%;
 			    text-align: center;	
 			}
 		}
