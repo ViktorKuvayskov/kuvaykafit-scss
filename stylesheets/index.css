@@ -17,7 +17,7 @@ body {
   font-family: 'Roboto', sans-serif;
   line-height: 1.75;
   box-sizing: border-box;
-  background: linear-gradient(#FCFEF2, #FAE6DE);
+  background: linear-gradient(#FCFEF2, #D7FFF9);
 }
 
 /* line 24, ../sass/index.scss */
@@ -86,46 +86,56 @@ a {
   margin: 0 20px;
 }
 
-/* line 83, ../sass/index.scss */
+/* line 81, ../sass/index.scss */
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
+}
+
+/* line 92, ../sass/index.scss */
 .header {
   flex: flex;
 }
-/* line 85, ../sass/index.scss */
+/* line 94, ../sass/index.scss */
 .header .nav-top {
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
 }
-/* line 90, ../sass/index.scss */
+/* line 99, ../sass/index.scss */
 .header .main-menu ul {
   display: flex;
   flex-direction: row;
 }
-/* line 93, ../sass/index.scss */
+/* line 102, ../sass/index.scss */
 .header .main-menu ul a {
   padding: 10px 15px;
   font-size: 16px;
   color: black;
   transition: all 1s;
 }
-/* line 98, ../sass/index.scss */
+/* line 107, ../sass/index.scss */
 .header .main-menu ul a:hover {
   background-color: tomato;
   border-radius: 20px;
 }
 
-/* line 107, ../sass/index.scss */
+/* line 116, ../sass/index.scss */
 .main-menu .nav-btn {
   background: #f4aa42;
   border-radius: 10px;
   transition: all 1s;
 }
-/* line 111, ../sass/index.scss */
+/* line 120, ../sass/index.scss */
 .main-menu .nav-btn a:hover {
   background-color: green;
 }
 
-/* line 116, ../sass/index.scss */
+/* line 125, ../sass/index.scss */
 .nav-bottom {
   min-height: 650px;
   background-image: url(..//img/web/nav-bottom-img.jpg);
@@ -133,7 +143,7 @@ a {
   background-size: cover;
   position: relative;
 }
-/* line 122, ../sass/index.scss */
+/* line 131, ../sass/index.scss */
 .nav-bottom .nav-bottom-text {
   position: absolute;
   left: 21%;
@@ -143,41 +153,41 @@ a {
   padding: 5px 20px;
 }
 
-/* line 136, ../sass/index.scss */
+/* line 145, ../sass/index.scss */
 h1 {
   text-align: center;
 }
 
-/* line 141, ../sass/index.scss */
+/* line 150, ../sass/index.scss */
 .aboutme-block {
   display: flex;
   flex-direction: column;
   margin-bottom: 30px;
 }
-/* line 145, ../sass/index.scss */
+/* line 154, ../sass/index.scss */
 .aboutme-block .aboutme-item {
   display: flex;
   justify-content: space-between;
 }
-/* line 148, ../sass/index.scss */
+/* line 157, ../sass/index.scss */
 .aboutme-block .aboutme-item p {
   padding: 20px;
   text-align: left;
   border: 1px solid black;
   border-radius: 15px;
 }
-/* line 154, ../sass/index.scss */
+/* line 163, ../sass/index.scss */
 .aboutme-block .aboutme-item img {
   padding: 5px;
   border-radius: 15px;
 }
-/* line 159, ../sass/index.scss */
+/* line 168, ../sass/index.scss */
 .aboutme-block .aboutme-item-column {
   display: flex;
   flex-direction: column;
 }
 
-/* line 167, ../sass/index.scss */
+/* line 176, ../sass/index.scss */
 .phrases {
   min-height: 100px;
   display: flex;
@@ -187,51 +197,55 @@ h1 {
   border-radius: 100px;
 }
 
-/* line 178, ../sass/index.scss */
+/* line 187, ../sass/index.scss */
 .slider-services {
   padding: 20px 20px;
 }
-/* line 180, ../sass/index.scss */
+/* line 189, ../sass/index.scss */
 .slider-services .slick-prev:before, .slider-services .slick-next:before {
-  background: #ffe8a3;
+  background: #223b36;
   border-radius: 10px;
   padding: 10px;
 }
-/* line 185, ../sass/index.scss */
+/* line 194, ../sass/index.scss */
 .slider-services .slider-courses {
   display: flex;
   justify-content: space-between;
   align-items: center;
   flex-direction: row;
 }
-/* line 190, ../sass/index.scss */
+/* line 199, ../sass/index.scss */
 .slider-services .slider-courses .slider-course-text {
   text-align: center;
   min-height: 450px;
 }
-/* line 193, ../sass/index.scss */
+/* line 202, ../sass/index.scss */
 .slider-services .slider-courses .slider-course-text ul {
   list-style-type: square;
   text-align: left;
 }
-/* line 198, ../sass/index.scss */
+/* line 207, ../sass/index.scss */
 .slider-services .slider-courses .slider-courses-img img {
   width: 300px;
 }
 
-/* line 208, ../sass/index.scss */
+/* line 217, ../sass/index.scss */
 .slider-price .slick-prev:before, .slider-price .slick-next:before {
-  background: #ff3d3d;
+  background: #eb6ba4;
   border-radius: 10px;
   padding: 5px;
 }
 
-/* line 215, ../sass/index.scss */
+/* line 223, ../sass/index.scss */
+.slider-price {
+  background: #F4FFFD;
+}
+/* line 225, ../sass/index.scss */
 .slider-price div {
   text-align: center;
-  margin: 0 20px;
+  margin: 0 20px 20px 20px;
 }
-/* line 218, ../sass/index.scss */
+/* line 228, ../sass/index.scss */
 .slider-price div a {
   padding: 0 10px;
   color: red;
@@ -240,97 +254,104 @@ h1 {
   transition: all 1s;
   text-decoration: none;
 }
-/* line 225, ../sass/index.scss */
+/* line 235, ../sass/index.scss */
 .slider-price div a:hover {
   background: #ffcd9b;
   color: #494541;
   border: 2px solid #ff3d3d;
 }
-/* line 231, ../sass/index.scss */
+/* line 241, ../sass/index.scss */
 .slider-price div .text-price {
-  background: #ff3d3d;
+  background: #eb6ba4;
   border-radius: 10px;
 }
 
-/* line 240, ../sass/index.scss */
-.gallery-slider {
+/* line 250, ../sass/index.scss */
+.gallery {
   margin: 50px 0;
 }
 
-/* line 245, ../sass/index.scss */
+/* line 255, ../sass/index.scss */
 .form {
   display: flex;
   justify-content: center;
+  flex-direction: column;
+  min-width: 100%;
   margin-bottom: 30px;
   padding: 10px;
-  background: #fff3d1;
+  text-align: center;
 }
-/* line 251, ../sass/index.scss */
-.form .container {
+/* line 263, ../sass/index.scss */
+.form form {
   background: #ffe69b;
-  width: 400px;
-  padding: 5px;
-}
-/* line 256, ../sass/index.scss */
-.form .container input {
+  border-radius: 20px;
   width: 100%;
+  padding: 0 0 30px 0;
+  border: none;
+  background: #F4FFFD;
 }
-/* line 259, ../sass/index.scss */
-.form .container textarea {
-  width: 100%;
+/* line 271, ../sass/index.scss */
+.form form input {
+  width: 95%;
+  margin: 0;
+  min-height: 30px;
 }
-/* line 262, ../sass/index.scss */
-.form .container .form-btn {
-  color: white;
-  background: #c4c4c4;
+/* line 277, ../sass/index.scss */
+.form form textarea {
+  width: 95%;
+}
+/* line 280, ../sass/index.scss */
+.form form .form-btn {
+  background: #E4DCF2;
   padding: 5px;
 }
 
-/* line 274, ../sass/index.scss */
+/* line 291, ../sass/index.scss */
 .footer {
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
-  background: #EACBC5;
+  background: #E1FEFA;
+  border-radius: 20px 20px 0 0;
 }
-/* line 279, ../sass/index.scss */
+/* line 297, ../sass/index.scss */
 .footer div {
   padding: 20px 20px 0 20px;
 }
 
 @media all and (max-width: 780px) {
-  /* line 293, ../sass/index.scss */
+  /* line 311, ../sass/index.scss */
   .header .nav-top {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
   }
-  /* line 298, ../sass/index.scss */
+  /* line 316, ../sass/index.scss */
   .header .nav-top .icon-block {
     width: 100%;
     display: flex;
     justify-content: space-between;
   }
-  /* line 303, ../sass/index.scss */
+  /* line 321, ../sass/index.scss */
   .header .nav-top ul {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
   }
-  /* line 308, ../sass/index.scss */
+  /* line 326, ../sass/index.scss */
   .header .nav-top ul a {
     display: inline-block;
   }
 
-  /* line 318, ../sass/index.scss */
+  /* line 336, ../sass/index.scss */
   .aboutme-block {
     display: flex;
     justify-content: center;
     flex-direction: column;
   }
-  /* line 322, ../sass/index.scss */
+  /* line 340, ../sass/index.scss */
   .aboutme-block .aboutme-item {
     display: flex;
     justify-content: center;
@@ -338,23 +359,23 @@ h1 {
     flex-direction: column;
     margin: 30px;
   }
-  /* line 328, ../sass/index.scss */
+  /* line 346, ../sass/index.scss */
   .aboutme-block .aboutme-item .aboutme-img {
     width: 300px;
   }
-  /* line 331, ../sass/index.scss */
+  /* line 349, ../sass/index.scss */
   .aboutme-block .aboutme-item p {
     font-size: 12px;
     padding: 5px;
   }
 
-  /* line 341, ../sass/index.scss */
+  /* line 359, ../sass/index.scss */
   .phrases p {
     font-size: 13px;
     padding: 25px;
   }
 
-  /* line 350, ../sass/index.scss */
+  /* line 368, ../sass/index.scss */
   .slider-services .slider-courses {
     display: flex;
     justify-content: center;
@@ -362,12 +383,12 @@ h1 {
     flex-direction: column-reverse;
     font-size: 12px;
   }
-  /* line 358, ../sass/index.scss */
+  /* line 376, ../sass/index.scss */
   .slider-services .slider-courses .slider-courses-img img {
     width: 200px;
   }
 
-  /* line 369, ../sass/index.scss */
+  /* line 387, ../sass/index.scss */
   .gallery .gallery-slider img {
     width: 300px;
   }

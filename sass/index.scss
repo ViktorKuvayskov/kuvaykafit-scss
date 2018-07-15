@@ -18,7 +18,7 @@ body {
 	font-family: 'Roboto', sans-serif;
 	line-height: 1.75;
 	box-sizing: border-box;
-	background: linear-gradient(#FCFEF2, #FAE6DE);
+	background: linear-gradient(#FCFEF2, #D7FFF9);
 }
 
 h1 {
@@ -76,6 +76,15 @@ a{
 
 .container{
 	margin: 0 20px;
+}
+
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
 }
 
 // header start
@@ -178,7 +187,7 @@ h1{
 .slider-services{
 	padding: 20px 20px;
 	.slick-prev:before, .slick-next:before{
-		background: #ffe8a3;
+		background: #223b36;
 		border-radius: 10px;
 		padding: 10px;
 	}
@@ -206,15 +215,16 @@ h1{
 	// slider-price start
 .slider-price{
 	.slick-prev:before, .slick-next:before{
-	background: #ff3d3d;
+	background: #eb6ba4;
 	border-radius: 10px;
 	padding: 5px;
 	}
 }
 .slider-price{
+	background: #F4FFFD;
 	div{
 		text-align: center;
-		margin: 0 20px;
+		margin: 0 20px 20px 20px;
 			a{
 			padding: 0 10px;
 			color: red;
@@ -229,7 +239,7 @@ h1{
 			}
 		}
 		.text-price{
-			background: #ff3d3d;
+			background: #eb6ba4;
 			border-radius: 10px;
 		}
 
@@ -237,7 +247,7 @@ h1{
 }	
 	// slider-price end
 	//gallery start
-.gallery-slider{
+.gallery{
 	margin: 50px 0;
 }
 	//gallery end
@@ -245,23 +255,30 @@ h1{
 .form{
 	display: flex;
 	justify-content: center;
+	flex-direction: column;
+	min-width: 100%;
 	margin-bottom: 30px;
 	padding: 10px;
-	background: #fff3d1;
-	.container{
+	text-align: center;
+	form{
 		background: #ffe69b;
-		width: 400px;
-		padding: 5px;
+		border-radius: 20px;
+		width: 100%;
+		padding: 0 0 30px 0;
+		border: none;
+		background: #F4FFFD;
 
 		input{
-			width: 100%;
+			width: 95%;
+			margin: 0;
+			
+			min-height: 30px;
 		}
 		textarea{
-			width: 100%;
+			width: 95%;
 		}
 		.form-btn{
-			color: white;
-			background: #c4c4c4;
+			background: #E4DCF2;
 			padding: 5px;
 		}
 	}
@@ -275,7 +292,8 @@ h1{
 	display: flex;
 	justify-content: space-between;
 	align-items: flex-end;
-	background: #EACBC5;
+	background: #E1FEFA ;
+	border-radius: 20px 20px 0 0;
 	div{
 		padding: 20px 20px 0 20px;
 	}
@@ -288,7 +306,7 @@ h1{
 
 @media all and (max-width: 780px){
   
-// header start
+// mobile header start
   .header { 
 		.nav-top{
 			display: flex;
@@ -313,8 +331,8 @@ h1{
 
 		}
 	}
-	// header end
-	// aboutme-block start
+	// mobile header end
+	// mobile aboutme-block start
 	.aboutme-block{
 		display: flex;
 		justify-content: center;
@@ -334,18 +352,18 @@ h1{
 			}
 		}
 	}	
-	// aboutme-block end
+	// mobile aboutme-block end
 
-	// phrases start
+	// mobile phrases start
 	.phrases{
 		p{
 			font-size: 13px;
 			padding: 25px;
 		}
 	}	
-	// phrases end
+	// mobile phrases end
 
-	// slider-course start
+	// mobile slider-course start
 	.slider-services{
 		.slider-courses{
 			display: flex;
@@ -361,9 +379,9 @@ h1{
 	    	}	
 		}
 	}
-	// slider-course end
+	// mobile slider-course end
 
-	// gallery start
+	// mobile gallery start
 	.gallery{
 		.gallery-slider{
 			img{
@@ -371,11 +389,11 @@ h1{
 			}
 		}
 	}
-	// gallery end
+	// mobile gallery end
 	
-	// form start
+	// mobile form start
 	
-	// form end
+	// mobile form end
 }
 
 
