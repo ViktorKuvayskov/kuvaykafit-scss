@@ -206,6 +206,7 @@ h1{
 		}
 		.slider-courses-img img{
 			width: 300px;
+			border-radius: 15px;
 		}
 		
 	}
@@ -249,9 +250,15 @@ h1{
 	//gallery start
 .gallery{
 	margin: 50px 0;
+	.gallery-slider{
+		img{
+			width: 100%;
+			border-radius: 20px 20px 20px 20px;
+		}
+	}	
 }
 	//gallery end
-	// form start
+	// form start	
 .form{
 	display: flex;
 	justify-content: center;
@@ -330,6 +337,16 @@ h1{
 			}
 
 		}
+		.nav-bottom{
+			min-height: 600px;
+			position: relative;
+			.nav-bottom-text{
+			    position: absolute;
+			    left: 12%;
+  				width: 65%;
+			    text-align: center;	
+			}
+		}
 	}
 	// mobile header end
 	// mobile aboutme-block start
@@ -385,7 +402,7 @@ h1{
 	.gallery{
 		.gallery-slider{
 			img{
-				width: 300px;
+				width: 100%;
 			}
 		}
 	}
@@ -396,4 +413,39 @@ h1{
 	// mobile form end
 }
 
+@media all and (max-width: 540px){
+	  .header { 
+		.nav-top{
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			flex-direction: column;
+			.icon-block{
+				width: 100%;
+				display: flex;
+				justify-content: space-between;
+			}
+			ul{
+				display: flex;
+   				justify-content: center;
+    			align-items: center;
+   				flex-direction: column;
+				a{
+					display: inline-block;
 
+				}
+			}
+
+		}
+		.nav-bottom{
+			min-height: 300px;
+			position: relative;
+			.nav-bottom-text{
+			    position: absolute;
+			    left: 12%;
+  				width: 65%;
+			    text-align: center;	
+			}
+		}
+	}
+}

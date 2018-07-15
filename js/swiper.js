@@ -22,7 +22,7 @@ $(document).ready(function(){
   arrow: true,
     responsive: [
     {
-      breakpoint: 768,
+      breakpoint: 760,
       settings: {
         slidesToShow: 3,
       }
@@ -53,5 +53,14 @@ $(document).ready(function(){
     fade: true,
     autoplay: true,
     autoplaySpeed: 2000,
+    responsive: [
+    {
+      breakpoint: 768,
+      settings: {
+        arrows: false,
+        dots: true,
+      }
+    },
+    ]
   });
 });

@@ -227,25 +227,26 @@ h1 {
 /* line 207, ../sass/index.scss */
 .slider-services .slider-courses .slider-courses-img img {
   width: 300px;
+  border-radius: 15px;
 }
 
-/* line 217, ../sass/index.scss */
+/* line 218, ../sass/index.scss */
 .slider-price .slick-prev:before, .slider-price .slick-next:before {
   background: #eb6ba4;
   border-radius: 10px;
   padding: 5px;
 }
 
-/* line 223, ../sass/index.scss */
+/* line 224, ../sass/index.scss */
 .slider-price {
   background: #F4FFFD;
 }
-/* line 225, ../sass/index.scss */
+/* line 226, ../sass/index.scss */
 .slider-price div {
   text-align: center;
   margin: 0 20px 20px 20px;
 }
-/* line 228, ../sass/index.scss */
+/* line 229, ../sass/index.scss */
 .slider-price div a {
   padding: 0 10px;
   color: red;
@@ -254,24 +255,29 @@ h1 {
   transition: all 1s;
   text-decoration: none;
 }
-/* line 235, ../sass/index.scss */
+/* line 236, ../sass/index.scss */
 .slider-price div a:hover {
   background: #ffcd9b;
   color: #494541;
   border: 2px solid #ff3d3d;
 }
-/* line 241, ../sass/index.scss */
+/* line 242, ../sass/index.scss */
 .slider-price div .text-price {
   background: #eb6ba4;
   border-radius: 10px;
 }
 
-/* line 250, ../sass/index.scss */
+/* line 251, ../sass/index.scss */
 .gallery {
   margin: 50px 0;
 }
+/* line 254, ../sass/index.scss */
+.gallery .gallery-slider img {
+  width: 100%;
+  border-radius: 20px 20px 20px 20px;
+}
 
-/* line 255, ../sass/index.scss */
+/* line 262, ../sass/index.scss */
 .form {
   display: flex;
   justify-content: center;
@@ -281,7 +287,7 @@ h1 {
   padding: 10px;
   text-align: center;
 }
-/* line 263, ../sass/index.scss */
+/* line 270, ../sass/index.scss */
 .form form {
   background: #ffe69b;
   border-radius: 20px;
@@ -290,23 +296,23 @@ h1 {
   border: none;
   background: #F4FFFD;
 }
-/* line 271, ../sass/index.scss */
+/* line 278, ../sass/index.scss */
 .form form input {
   width: 95%;
   margin: 0;
   min-height: 30px;
 }
-/* line 277, ../sass/index.scss */
+/* line 284, ../sass/index.scss */
 .form form textarea {
   width: 95%;
 }
-/* line 280, ../sass/index.scss */
+/* line 287, ../sass/index.scss */
 .form form .form-btn {
   background: #E4DCF2;
   padding: 5px;
 }
 
-/* line 291, ../sass/index.scss */
+/* line 298, ../sass/index.scss */
 .footer {
   display: flex;
   justify-content: space-between;
@@ -314,44 +320,56 @@ h1 {
   background: #E1FEFA;
   border-radius: 20px 20px 0 0;
 }
-/* line 297, ../sass/index.scss */
+/* line 304, ../sass/index.scss */
 .footer div {
   padding: 20px 20px 0 20px;
 }
 
 @media all and (max-width: 780px) {
-  /* line 311, ../sass/index.scss */
+  /* line 318, ../sass/index.scss */
   .header .nav-top {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
   }
-  /* line 316, ../sass/index.scss */
+  /* line 323, ../sass/index.scss */
   .header .nav-top .icon-block {
     width: 100%;
     display: flex;
     justify-content: space-between;
   }
-  /* line 321, ../sass/index.scss */
+  /* line 328, ../sass/index.scss */
   .header .nav-top ul {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
   }
-  /* line 326, ../sass/index.scss */
+  /* line 333, ../sass/index.scss */
   .header .nav-top ul a {
     display: inline-block;
   }
+  /* line 340, ../sass/index.scss */
+  .header .nav-bottom {
+    min-height: 600px;
+    position: relative;
+  }
+  /* line 343, ../sass/index.scss */
+  .header .nav-bottom .nav-bottom-text {
+    position: absolute;
+    left: 12%;
+    width: 65%;
+    text-align: center;
+  }
 
-  /* line 336, ../sass/index.scss */
+  /* line 353, ../sass/index.scss */
   .aboutme-block {
     display: flex;
     justify-content: center;
     flex-direction: column;
   }
-  /* line 340, ../sass/index.scss */
+  /* line 357, ../sass/index.scss */
   .aboutme-block .aboutme-item {
     display: flex;
     justify-content: center;
@@ -359,23 +377,23 @@ h1 {
     flex-direction: column;
     margin: 30px;
   }
-  /* line 346, ../sass/index.scss */
+  /* line 363, ../sass/index.scss */
   .aboutme-block .aboutme-item .aboutme-img {
     width: 300px;
   }
-  /* line 349, ../sass/index.scss */
+  /* line 366, ../sass/index.scss */
   .aboutme-block .aboutme-item p {
     font-size: 12px;
     padding: 5px;
   }
 
-  /* line 359, ../sass/index.scss */
+  /* line 376, ../sass/index.scss */
   .phrases p {
     font-size: 13px;
     padding: 25px;
   }
 
-  /* line 368, ../sass/index.scss */
+  /* line 385, ../sass/index.scss */
   .slider-services .slider-courses {
     display: flex;
     justify-content: center;
@@ -383,13 +401,51 @@ h1 {
     flex-direction: column-reverse;
     font-size: 12px;
   }
-  /* line 376, ../sass/index.scss */
+  /* line 393, ../sass/index.scss */
   .slider-services .slider-courses .slider-courses-img img {
     width: 200px;
   }
 
-  /* line 387, ../sass/index.scss */
+  /* line 404, ../sass/index.scss */
   .gallery .gallery-slider img {
-    width: 300px;
+    width: 100%;
+  }
+}
+@media all and (max-width: 540px) {
+  /* line 418, ../sass/index.scss */
+  .header .nav-top {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  /* line 423, ../sass/index.scss */
+  .header .nav-top .icon-block {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+  /* line 428, ../sass/index.scss */
+  .header .nav-top ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  /* line 433, ../sass/index.scss */
+  .header .nav-top ul a {
+    display: inline-block;
+  }
+  /* line 440, ../sass/index.scss */
+  .header .nav-bottom {
+    min-height: 300px;
+    position: relative;
+  }
+  /* line 443, ../sass/index.scss */
+  .header .nav-bottom .nav-bottom-text {
+    position: absolute;
+    left: 12%;
+    width: 65%;
+    text-align: center;
   }
 }
