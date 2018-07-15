@@ -148,7 +148,17 @@ h1{
 		p{
 			padding: 20px;
 			text-align: left;
+			border: 1px solid black;
+			border-radius: 15px;
 		}
+		img{
+			padding: 5px;
+			border-radius: 15px;
+		}
+	}
+	.aboutme-item-column{
+		display: flex;
+		flex-direction: column;
 	}	
 }	
 	// about me block end
@@ -165,7 +175,7 @@ h1{
 	// phrases end
 
 	// slider-course start
-.slider1{
+.slider-services{
 	padding: 20px 20px;
 	.slick-prev:before, .slick-next:before{
 		background: #ffe8a3;
@@ -194,7 +204,7 @@ h1{
 	// slider-course end
 
 	// slider-price start
-.slider2{
+.slider-price{
 	.slick-prev:before, .slick-next:before{
 	background: #ff3d3d;
 	border-radius: 10px;
@@ -323,10 +333,6 @@ h1{
 				padding: 5px;
 			}
 		}
-		.aboutme-mobile{
-			display: flex;
-			flex-direction: column-reverse;
-		}
 	}	
 	// aboutme-block end
 
@@ -340,16 +346,14 @@ h1{
 	// phrases end
 
 	// slider-course start
-	.slider1{
+	.slider-services{
 		.slider-courses{
 			display: flex;
     		justify-content: center;
     		align-items: center;
-    		flex-direction: column;	
+    		flex-direction: column-reverse;	
     		font-size: 12px;
-    		.slider-course-text{
-    			min-height: 700px;
-    		}	
+	
 	    	.slider-courses-img{	
 	    		img{
 	    			width: 200px;
@@ -360,8 +364,8 @@ h1{
 	// slider-course end
 
 	// gallery start
-	.gallery-slider{
-		.slider3{
+	.gallery{
+		.gallery-slider{
 			img{
 				width: 300px;
 			}

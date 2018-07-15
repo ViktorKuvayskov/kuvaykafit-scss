@@ -1,33 +1,44 @@
 $(document).ready(function(){
-  $('.slider1').slick({
+  $('.slider-services').slick({
     dots: false,
     arrows: true,
+    responsive: [
+    {
+      breakpoint: 768,
+      settings: {
+        arrows: false,
+        dots: true,
+      }
+    },
+    ]
   });
 });
     
 
 $(document).ready(function(){
-  $('.slider2').slick({
+  $('.slider-price').slick({
   dots: true,
   slidesToShow: 4,
   arrow: true,
     responsive: [
     {
-      breakpoint: 830,
+      breakpoint: 768,
       settings: {
         slidesToShow: 3,
       }
     },
     {
-      breakpoint: 768,
+      breakpoint: 520,
       settings: {
         slidesToShow: 2,
+        arrows: false,
       }
     },
     {
       breakpoint: 375,
       settings: {
         slidesToShow: 1,
+        arrows: false,
       }
     },
     ]
@@ -35,7 +46,7 @@ $(document).ready(function(){
 });
 
 $(document).ready(function(){
-  $('.slider3').slick({
+  $('.gallery-slider').slick({
     dots: true,
     infinite: true,
     speed: 500,

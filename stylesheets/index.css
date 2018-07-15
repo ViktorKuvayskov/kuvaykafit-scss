@@ -163,9 +163,21 @@ h1 {
 .aboutme-block .aboutme-item p {
   padding: 20px;
   text-align: left;
+  border: 1px solid black;
+  border-radius: 15px;
+}
+/* line 154, ../sass/index.scss */
+.aboutme-block .aboutme-item img {
+  padding: 5px;
+  border-radius: 15px;
+}
+/* line 159, ../sass/index.scss */
+.aboutme-block .aboutme-item-column {
+  display: flex;
+  flex-direction: column;
 }
 
-/* line 157, ../sass/index.scss */
+/* line 167, ../sass/index.scss */
 .phrases {
   min-height: 100px;
   display: flex;
@@ -175,51 +187,51 @@ h1 {
   border-radius: 100px;
 }
 
-/* line 168, ../sass/index.scss */
-.slider1 {
+/* line 178, ../sass/index.scss */
+.slider-services {
   padding: 20px 20px;
 }
-/* line 170, ../sass/index.scss */
-.slider1 .slick-prev:before, .slider1 .slick-next:before {
+/* line 180, ../sass/index.scss */
+.slider-services .slick-prev:before, .slider-services .slick-next:before {
   background: #ffe8a3;
   border-radius: 10px;
   padding: 10px;
 }
-/* line 175, ../sass/index.scss */
-.slider1 .slider-courses {
+/* line 185, ../sass/index.scss */
+.slider-services .slider-courses {
   display: flex;
   justify-content: space-between;
   align-items: center;
   flex-direction: row;
 }
-/* line 180, ../sass/index.scss */
-.slider1 .slider-courses .slider-course-text {
+/* line 190, ../sass/index.scss */
+.slider-services .slider-courses .slider-course-text {
   text-align: center;
   min-height: 450px;
 }
-/* line 183, ../sass/index.scss */
-.slider1 .slider-courses .slider-course-text ul {
+/* line 193, ../sass/index.scss */
+.slider-services .slider-courses .slider-course-text ul {
   list-style-type: square;
   text-align: left;
 }
-/* line 188, ../sass/index.scss */
-.slider1 .slider-courses .slider-courses-img img {
+/* line 198, ../sass/index.scss */
+.slider-services .slider-courses .slider-courses-img img {
   width: 300px;
 }
 
-/* line 198, ../sass/index.scss */
-.slider2 .slick-prev:before, .slider2 .slick-next:before {
+/* line 208, ../sass/index.scss */
+.slider-price .slick-prev:before, .slider-price .slick-next:before {
   background: #ff3d3d;
   border-radius: 10px;
   padding: 5px;
 }
 
-/* line 205, ../sass/index.scss */
+/* line 215, ../sass/index.scss */
 .slider-price div {
   text-align: center;
   margin: 0 20px;
 }
-/* line 208, ../sass/index.scss */
+/* line 218, ../sass/index.scss */
 .slider-price div a {
   padding: 0 10px;
   color: red;
@@ -228,24 +240,24 @@ h1 {
   transition: all 1s;
   text-decoration: none;
 }
-/* line 215, ../sass/index.scss */
+/* line 225, ../sass/index.scss */
 .slider-price div a:hover {
   background: #ffcd9b;
   color: #494541;
   border: 2px solid #ff3d3d;
 }
-/* line 221, ../sass/index.scss */
+/* line 231, ../sass/index.scss */
 .slider-price div .text-price {
   background: #ff3d3d;
   border-radius: 10px;
 }
 
-/* line 230, ../sass/index.scss */
+/* line 240, ../sass/index.scss */
 .gallery-slider {
   margin: 50px 0;
 }
 
-/* line 235, ../sass/index.scss */
+/* line 245, ../sass/index.scss */
 .form {
   display: flex;
   justify-content: center;
@@ -253,72 +265,72 @@ h1 {
   padding: 10px;
   background: #fff3d1;
 }
-/* line 241, ../sass/index.scss */
+/* line 251, ../sass/index.scss */
 .form .container {
   background: #ffe69b;
   width: 400px;
   padding: 5px;
 }
-/* line 246, ../sass/index.scss */
+/* line 256, ../sass/index.scss */
 .form .container input {
   width: 100%;
 }
-/* line 249, ../sass/index.scss */
+/* line 259, ../sass/index.scss */
 .form .container textarea {
   width: 100%;
 }
-/* line 252, ../sass/index.scss */
+/* line 262, ../sass/index.scss */
 .form .container .form-btn {
   color: white;
   background: #c4c4c4;
   padding: 5px;
 }
 
-/* line 264, ../sass/index.scss */
+/* line 274, ../sass/index.scss */
 .footer {
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
   background: #EACBC5;
 }
-/* line 269, ../sass/index.scss */
+/* line 279, ../sass/index.scss */
 .footer div {
   padding: 20px 20px 0 20px;
 }
 
 @media all and (max-width: 780px) {
-  /* line 283, ../sass/index.scss */
+  /* line 293, ../sass/index.scss */
   .header .nav-top {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
   }
-  /* line 288, ../sass/index.scss */
+  /* line 298, ../sass/index.scss */
   .header .nav-top .icon-block {
     width: 100%;
     display: flex;
     justify-content: space-between;
   }
-  /* line 293, ../sass/index.scss */
+  /* line 303, ../sass/index.scss */
   .header .nav-top ul {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
   }
-  /* line 298, ../sass/index.scss */
+  /* line 308, ../sass/index.scss */
   .header .nav-top ul a {
     display: inline-block;
   }
 
-  /* line 308, ../sass/index.scss */
+  /* line 318, ../sass/index.scss */
   .aboutme-block {
     display: flex;
     justify-content: center;
     flex-direction: column;
   }
-  /* line 312, ../sass/index.scss */
+  /* line 322, ../sass/index.scss */
   .aboutme-block .aboutme-item {
     display: flex;
     justify-content: center;
@@ -326,46 +338,37 @@ h1 {
     flex-direction: column;
     margin: 30px;
   }
-  /* line 318, ../sass/index.scss */
+  /* line 328, ../sass/index.scss */
   .aboutme-block .aboutme-item .aboutme-img {
     width: 300px;
   }
-  /* line 321, ../sass/index.scss */
+  /* line 331, ../sass/index.scss */
   .aboutme-block .aboutme-item p {
     font-size: 12px;
     padding: 5px;
   }
-  /* line 326, ../sass/index.scss */
-  .aboutme-block .aboutme-mobile {
-    display: flex;
-    flex-direction: column-reverse;
-  }
 
-  /* line 335, ../sass/index.scss */
+  /* line 341, ../sass/index.scss */
   .phrases p {
     font-size: 13px;
     padding: 25px;
   }
 
-  /* line 344, ../sass/index.scss */
-  .slider1 .slider-courses {
+  /* line 350, ../sass/index.scss */
+  .slider-services .slider-courses {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
+    flex-direction: column-reverse;
     font-size: 12px;
   }
-  /* line 350, ../sass/index.scss */
-  .slider1 .slider-courses .slider-course-text {
-    min-height: 700px;
-  }
-  /* line 354, ../sass/index.scss */
-  .slider1 .slider-courses .slider-courses-img img {
+  /* line 358, ../sass/index.scss */
+  .slider-services .slider-courses .slider-courses-img img {
     width: 200px;
   }
 
-  /* line 365, ../sass/index.scss */
-  .gallery-slider .slider3 img {
+  /* line 369, ../sass/index.scss */
+  .gallery .gallery-slider img {
     width: 300px;
   }
 }
