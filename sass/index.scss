@@ -295,13 +295,17 @@ h2{
 			width: 95%;
 			margin: 0;
 			min-height: 30px;
-			border-radius: 15px;
-			padding: 10px;
+			background: #d4ecd5;
+    		border: none;
+    		border-radius: 15px;
+    		padding: 10px;
 		}
 		textarea{
 			width: 95%;
-			border-radius: 15px;
-			padding: 10px;
+    		border: none;
+  			background: #d4ecd5;
+   			border-radius: 15px;
+    		padding: 10px;
 		}
 		.form-btn{
 			background: #d4ecd5;
