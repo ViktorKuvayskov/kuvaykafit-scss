@@ -294,15 +294,20 @@ h2{
 		input{
 			width: 95%;
 			margin: 0;
-			
 			min-height: 30px;
+			border-radius: 15px;
+			padding: 10px;
 		}
 		textarea{
 			width: 95%;
+			border-radius: 15px;
+			padding: 10px;
 		}
 		.form-btn{
-			background: #E4DCF2;
-			padding: 5px;
+			background: #d4ecd5;
+    		padding: 10px;
+    		border: none;
+    		border-radius: 15px;
 		}
 	}
 }
