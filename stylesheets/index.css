@@ -331,17 +331,23 @@ h2 {
   border: none;
   background: #d4ecd5;
   border-radius: 15px;
+  margin-bottom: 15px;
   padding: 10px;
 }
-/* line 310, ../sass/index.scss */
+/* line 311, ../sass/index.scss */
 .form form .form-btn {
-  background: #d4ecd5;
+  background: #56ec5c;
   padding: 10px;
   border: none;
   border-radius: 15px;
+  transition: all 1s;
+}
+/* line 317, ../sass/index.scss */
+.form form .form-btn:hover {
+  background: #00a607;
 }
 
-/* line 323, ../sass/index.scss */
+/* line 328, ../sass/index.scss */
 .footer {
   display: flex;
   justify-content: space-between;
@@ -349,42 +355,42 @@ h2 {
   background: #E1FEFA;
   border-radius: 20px 20px 0 0;
 }
-/* line 329, ../sass/index.scss */
+/* line 334, ../sass/index.scss */
 .footer div {
   padding: 20px 20px 0 20px;
 }
 
 @media all and (max-width: 780px) {
-  /* line 343, ../sass/index.scss */
+  /* line 348, ../sass/index.scss */
   .header .nav-top {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
   }
-  /* line 348, ../sass/index.scss */
+  /* line 353, ../sass/index.scss */
   .header .nav-top .icon-block {
     width: 100%;
     display: flex;
     justify-content: space-between;
   }
-  /* line 353, ../sass/index.scss */
+  /* line 358, ../sass/index.scss */
   .header .nav-top ul {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
   }
-  /* line 358, ../sass/index.scss */
+  /* line 363, ../sass/index.scss */
   .header .nav-top ul a {
     display: inline-block;
   }
-  /* line 365, ../sass/index.scss */
+  /* line 370, ../sass/index.scss */
   .header .nav-bottom {
     min-height: 600px;
     position: relative;
   }
-  /* line 368, ../sass/index.scss */
+  /* line 373, ../sass/index.scss */
   .header .nav-bottom .nav-bottom-text {
     position: absolute;
     left: 0%;
@@ -392,13 +398,13 @@ h2 {
     text-align: center;
   }
 
-  /* line 378, ../sass/index.scss */
+  /* line 383, ../sass/index.scss */
   .aboutme-block {
     display: flex;
     justify-content: center;
     flex-direction: column;
   }
-  /* line 382, ../sass/index.scss */
+  /* line 387, ../sass/index.scss */
   .aboutme-block .aboutme-item {
     display: flex;
     justify-content: center;
@@ -406,23 +412,23 @@ h2 {
     flex-direction: column;
     margin: 30px;
   }
-  /* line 388, ../sass/index.scss */
+  /* line 393, ../sass/index.scss */
   .aboutme-block .aboutme-item .aboutme-img {
     width: 300px;
   }
-  /* line 391, ../sass/index.scss */
+  /* line 396, ../sass/index.scss */
   .aboutme-block .aboutme-item p {
     font-size: 12px;
     padding: 5px;
   }
 
-  /* line 401, ../sass/index.scss */
+  /* line 406, ../sass/index.scss */
   .phrases p {
     font-size: 13px;
     padding: 25px;
   }
 
-  /* line 410, ../sass/index.scss */
+  /* line 415, ../sass/index.scss */
   .slider-services .slider-courses {
     display: flex;
     justify-content: center;
@@ -430,47 +436,47 @@ h2 {
     flex-direction: column-reverse;
     font-size: 12px;
   }
-  /* line 418, ../sass/index.scss */
+  /* line 423, ../sass/index.scss */
   .slider-services .slider-courses .slider-courses-img img {
     width: 200px;
   }
 
-  /* line 429, ../sass/index.scss */
+  /* line 434, ../sass/index.scss */
   .gallery .gallery-slider img {
     width: 100%;
   }
 }
 @media all and (max-width: 540px) {
-  /* line 443, ../sass/index.scss */
+  /* line 448, ../sass/index.scss */
   .header .nav-top {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
   }
-  /* line 448, ../sass/index.scss */
+  /* line 453, ../sass/index.scss */
   .header .nav-top .icon-block {
     width: 100%;
     display: flex;
     justify-content: space-between;
   }
-  /* line 453, ../sass/index.scss */
+  /* line 458, ../sass/index.scss */
   .header .nav-top ul {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
   }
-  /* line 458, ../sass/index.scss */
+  /* line 463, ../sass/index.scss */
   .header .nav-top ul a {
     display: inline-block;
   }
-  /* line 465, ../sass/index.scss */
+  /* line 470, ../sass/index.scss */
   .header .nav-bottom {
     min-height: 300px;
     position: relative;
   }
-  /* line 468, ../sass/index.scss */
+  /* line 473, ../sass/index.scss */
   .header .nav-bottom .nav-bottom-text {
     position: absolute;
     left: 12%;

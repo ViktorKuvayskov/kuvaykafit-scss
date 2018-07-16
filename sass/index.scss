@@ -305,13 +305,18 @@ h2{
     		border: none;
   			background: #d4ecd5;
    			border-radius: 15px;
+   			margin-bottom: 15px;
     		padding: 10px;
 		}
 		.form-btn{
-			background: #d4ecd5;
+			background: #56ec5c;
     		padding: 10px;
     		border: none;
     		border-radius: 15px;
+    		transition: all 1s;
+    		&:hover{
+    			background: #00a607;
+    		}
 		}
 	}
 }
