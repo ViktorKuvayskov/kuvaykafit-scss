@@ -127,10 +127,10 @@ a {
     background-image: url(..//img/web/nav-bottom-img.jpg);
     background-position: center;
     background-size: cover;
-    // display: flex;
-    // flex-direction: column;
-    // justify-content: space-between;
-    // text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
 
     .nav-bottom-logo {
         // position: absolute;
@@ -177,8 +177,13 @@ h2 {
             border-radius: 15px;
         }
 
-        img {
+        .aboutme-img {
+            width: 299px;
+            height: 448px;
             padding: 5px;
+        }
+        .aboutme-middle-img{
+            width: 100%;
         }
     }
 
@@ -399,12 +404,11 @@ h2 {
 
         .nav-bottom {
             min-height: 600px;
-            position: relative;
+            display: flex;  
+            flex-direction: column;
 
             .nav-bottom-text {
-                position: absolute;
-                left: 0%;
-                width: 89%;
+
                 text-align: center; 
             }
         }
@@ -430,7 +434,7 @@ h2 {
     
             .slider-courses-img {  
                 img {
-                    width: 200px;
+                    width: 400px;
                 }
             }   
         }
@@ -467,7 +471,8 @@ h2 {
             margin: 30px;
 
             .aboutme-img {
-                width: 300px;
+                width: 100%;
+                height: auto;
             }
 
             p {
@@ -476,6 +481,10 @@ h2 {
             }
         }
     }   
+
+    .slider-courses-img{
+        width: 100%;
+    }
 // mobile aboutme-block end
 }
 
@@ -491,21 +500,15 @@ h2 {
                     display: inline-block;
                 }
             }
-
         }
-        .nav-bottom {
-            min-height: 300px;
-            position: relative;
-
-            .nav-bottom-text {
-                position: absolute;
-                left: 12%;
-                width: 65%;
-                text-align: center; 
-            }
-        }
+    }   
+    .aboutme-img {
+        width: 100%;
+        height: auto;
     }
 }
+
+
 
 $h_bar_thickness: 2px;
 $h_color: #000;

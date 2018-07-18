@@ -29,14 +29,14 @@ $(document).ready(function(){
       }
     },
     {
-      breakpoint: 520,
+      breakpoint: 768,
       settings: {
         slidesToShow: 2,
         arrows: false,
       }
     },
     {
-      breakpoint: 375,
+      breakpoint: 520,
       settings: {
         slidesToShow: 1,
         arrows: false,
