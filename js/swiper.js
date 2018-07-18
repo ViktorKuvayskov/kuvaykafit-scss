@@ -17,13 +17,14 @@ $(document).ready(function(){
 
 $(document).ready(function(){
   $('.slider-price').slick({
-  dots: true,
+  dots: false,
   slidesToShow: 4,
   arrow: false,
     responsive: [
     {
       breakpoint: 1024,
       settings: {
+        dots: true,
         slidesToShow: 3,
         arrows: false,
       }
@@ -31,6 +32,7 @@ $(document).ready(function(){
     {
       breakpoint: 768,
       settings: {
+        dots: true,
         slidesToShow: 2,
         arrows: false,
       }
@@ -38,6 +40,7 @@ $(document).ready(function(){
     {
       breakpoint: 520,
       settings: {
+        dots: true,
         slidesToShow: 1,
         arrows: false,
       }

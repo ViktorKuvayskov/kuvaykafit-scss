@@ -105,26 +105,25 @@ a {
         flex-direction: row;
 
          a {
+            margin-left: 10px;
             padding: 10px 15px;
             font-size: 16px;
             color: black;
             transition: all 1s;
 
             &:hover{
-                background-color: tomato;
+                background-color: #98e0ed;
+                color: #5d788d;
                 border-radius: 20px;
             }
         }
     }
 }
 .nav-btn {
-    background: #f4aa42;
+    background: transparent;
     border-radius: 10px;
     transition: all 1s;
-
-    a:hover{
-        background-color: green;
-    }
+    border: 2px solid black ;
 }
 
 .nav-bottom {
