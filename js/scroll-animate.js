@@ -4,13 +4,13 @@ $(window).on('scroll', function(){
 	$('.mov').each(function(){
 		let divPos = $(this).offset().top;
 		if (divPos < topOfWindow+700) {
-			$(this).addClass('fadeInUpBig');
+			$(this).addClass('bounce');
 		}
 	});
-	$('.mov-left').each(function(){
+	$('.mov-fade').each(function(){
 		let divPos = $(this).offset().top;
 		if (divPos < topOfWindow+600) {
-			$(this).addClass('fadeInLeft');
+			$(this).addClass('fadeIn');
 		}
 	});
 	$('.mov-right').each(function(){

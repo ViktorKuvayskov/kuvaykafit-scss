@@ -1,7 +1,7 @@
 $(document).ready(function(){
   $('.slider-services').slick({
-    dots: false,
-    arrows: true,
+    dots: true,
+    arrows: false,
     responsive: [
     {
       breakpoint: 768,
@@ -12,12 +12,6 @@ $(document).ready(function(){
     },
     ]
   });
-
-
-
-  $('.nav_icon').on('click', function() {
-        $(this).toggleClass('is_active').next().stop().toggleClass('is_open');
-    });
 });
     
 
@@ -25,12 +19,13 @@ $(document).ready(function(){
   $('.slider-price').slick({
   dots: true,
   slidesToShow: 4,
-  arrow: true,
+  arrow: false,
     responsive: [
     {
-      breakpoint: 760,
+      breakpoint: 1024,
       settings: {
         slidesToShow: 3,
+        arrows: false,
       }
     },
     {
@@ -57,6 +52,7 @@ $(document).ready(function(){
     infinite: true,
     speed: 500,
     fade: true,
+    arrows: false,
     autoplay: true,
     autoplaySpeed: 2000,
     responsive: [
